@@ -4071,10 +4071,7 @@
             const entry = e.detail.entry;
             const targetElement = entry.target;
             const animation = document.getElementById("animation");
-            if (targetElement === document.querySelector(".jsAnimation")) animation.beginElement();
-            if (animation) animation.addEventListener("endEvent", (function() {
-                document.querySelector(".main-subscription__container").classList.add("_active");
-            }));
+            if (targetElement == document.querySelector(".jsAnimation._watcher-view")) animation.beginElement();
         }));
     }));
     window["FLS"] = true;
