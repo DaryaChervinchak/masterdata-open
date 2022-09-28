@@ -592,9 +592,9 @@ textarea.input {
 .main-subscription__animation {
   position: absolute;
   top: -26%;
+  height: 100%;
   left: 0;
   width: 60%;
-  height: 100%;
 }
 
 .main-subscription__animation svg {
@@ -684,7 +684,7 @@ textarea.input {
           flex: 1 1 auto;
 }
 
-.header__btn {
+.header__btn.button {
   padding: 0.5625rem 1.4375rem;
   font-size: 1.125rem;
 }
@@ -774,30 +774,30 @@ textarea.input {
           justify-content: center;
 }
 
-.search-form__input {
+.search-form__input.input {
   background-color: #FF604A;
   height: 3.75rem;
   padding: 0;
   color: #fff;
 }
 
-.search-form__input::-webkit-input-placeholder {
+.search-form__input.input::-webkit-input-placeholder {
   color: #fff;
 }
 
-.search-form__input::-moz-placeholder {
+.search-form__input.input::-moz-placeholder {
   color: #fff;
 }
 
-.search-form__input:-ms-input-placeholder {
+.search-form__input.input:-ms-input-placeholder {
   color: #fff;
 }
 
-.search-form__input::-ms-input-placeholder {
+.search-form__input.input::-ms-input-placeholder {
   color: #fff;
 }
 
-.search-form__input::placeholder {
+.search-form__input.input::placeholder {
   color: #fff;
 }
 
@@ -2478,31 +2478,31 @@ html.touch .menu__list > li > a {
     min-height: 5.625rem;
   }
 
-  .search-form__input {
+  .search-form__input.input {
     padding-right: 1.875rem;
   }
 
-  .search-form__input {
+  .search-form__input.input {
     font-size: 1.25rem;
   }
 
-  .search-form__input::-webkit-input-placeholder {
+  .search-form__input.input::-webkit-input-placeholder {
     font-size: 1.25rem;
   }
 
-  .search-form__input::-moz-placeholder {
+  .search-form__input.input::-moz-placeholder {
     font-size: 1.25rem;
   }
 
-  .search-form__input:-ms-input-placeholder {
+  .search-form__input.input:-ms-input-placeholder {
     font-size: 1.25rem;
   }
 
-  .search-form__input::-ms-input-placeholder {
+  .search-form__input.input::-ms-input-placeholder {
     font-size: 1.25rem;
   }
 
-  .search-form__input::placeholder {
+  .search-form__input.input::placeholder {
     font-size: 1.25rem;
   }
 
@@ -3067,31 +3067,31 @@ html.touch .menu__list > li > a {
     min-height: 4.25rem;
   }
 
-  .search-form__input {
+  .search-form__input.input {
     padding-right: 0.9375rem;
   }
 
-  .search-form__input {
+  .search-form__input.input {
     font-size: 1.125rem;
   }
 
-  .search-form__input::-webkit-input-placeholder {
+  .search-form__input.input::-webkit-input-placeholder {
     font-size: 1.125rem;
   }
 
-  .search-form__input::-moz-placeholder {
+  .search-form__input.input::-moz-placeholder {
     font-size: 1.125rem;
   }
 
-  .search-form__input:-ms-input-placeholder {
+  .search-form__input.input:-ms-input-placeholder {
     font-size: 1.125rem;
   }
 
-  .search-form__input::-ms-input-placeholder {
+  .search-form__input.input::-ms-input-placeholder {
     font-size: 1.125rem;
   }
 
-  .search-form__input::placeholder {
+  .search-form__input.input::placeholder {
     font-size: 1.125rem;
   }
 
@@ -3417,6 +3417,10 @@ html.touch .menu__list > li > a {
 }
 
 @media (max-width: 82.25em) {
+  .main-subscription__animation {
+    width: 68%;
+  }
+
   .slide-main br {
     display: none;
   }
@@ -3522,7 +3526,7 @@ html.touch .menu__list > li > a {
         flex-basis: 11.25rem;
   }
 
-  .header__btn {
+  .header__btn.button {
     margin-top: 3.125rem;
   }
 
@@ -3801,11 +3805,7 @@ html.touch .menu__list > li > a {
 }
 
 @media (max-width: 29.99875em) {
-  .main-form__button {
-    width: 100%;
-  }
-
-  .slide-main__btn {
+  .button {
     width: 100%;
   }
 
@@ -3813,10 +3813,6 @@ html.touch .menu__list > li > a {
     -webkit-box-flex: 1;
         -ms-flex: 1 1 100%;
             flex: 1 1 100%;
-  }
-
-  .main-consultant__btn {
-    width: 100%;
   }
 
   .main-advantages__item {
@@ -3833,10 +3829,6 @@ html.touch .menu__list > li > a {
     -webkit-box-flex: 0;
         -ms-flex: 0 1 50%;
             flex: 0 1 50%;
-  }
-
-  .main-clients__btn {
-    width: 100%;
   }
 
   .main-team__item {
@@ -4324,61 +4316,61 @@ html.touch .menu__list > li > a {
 }
 
 @supports (padding-right: clamp( 0.9375rem , 0.6362951807rem  +  1.5060240964vw , 1.875rem )) {
-    .search-form__input {
+    .search-form__input.input {
       padding-right: clamp( 0.9375rem , 0.6362951807rem  +  1.5060240964vw , 1.875rem );
     }
 }
 
 @supports not (padding-right: clamp( 0.9375rem , 0.6362951807rem  +  1.5060240964vw , 1.875rem )) {
-    .search-form__input {
+    .search-form__input.input {
       padding-right: calc(0.9375rem + 0.9375 * (100vw - 20rem) / 62.25);
     }
 }
 
 @supports (font-size: clamp( 1.125rem , 1.0848393574rem  +  0.2008032129vw , 1.25rem )) {
-    .search-form__input {
+    .search-form__input.input {
       font-size: clamp( 1.125rem , 1.0848393574rem  +  0.2008032129vw , 1.25rem );
     }
 }
 
 @supports not (font-size: clamp( 1.125rem , 1.0848393574rem  +  0.2008032129vw , 1.25rem )) {
-    .search-form__input {
+    .search-form__input.input {
       font-size: calc(1.125rem + 0.125 * (100vw - 20rem) / 62.25);
     }
 }
 
 @supports (font-size: clamp( 1.125rem , 1.0848393574rem  +  0.2008032129vw , 1.25rem )) {
-    .search-form__input::-webkit-input-placeholder {
+    .search-form__input.input::-webkit-input-placeholder {
       font-size: clamp( 1.125rem , 1.0848393574rem  +  0.2008032129vw , 1.25rem );
     }
-    .search-form__input::-moz-placeholder {
+    .search-form__input.input::-moz-placeholder {
       font-size: clamp( 1.125rem , 1.0848393574rem  +  0.2008032129vw , 1.25rem );
     }
-    .search-form__input:-ms-input-placeholder {
+    .search-form__input.input:-ms-input-placeholder {
       font-size: clamp( 1.125rem , 1.0848393574rem  +  0.2008032129vw , 1.25rem );
     }
-    .search-form__input::-ms-input-placeholder {
+    .search-form__input.input::-ms-input-placeholder {
       font-size: clamp( 1.125rem , 1.0848393574rem  +  0.2008032129vw , 1.25rem );
     }
-    .search-form__input::placeholder {
+    .search-form__input.input::placeholder {
       font-size: clamp( 1.125rem , 1.0848393574rem  +  0.2008032129vw , 1.25rem );
     }
 }
 
 @supports not (font-size: clamp( 1.125rem , 1.0848393574rem  +  0.2008032129vw , 1.25rem )) {
-    .search-form__input::-webkit-input-placeholder {
+    .search-form__input.input::-webkit-input-placeholder {
       font-size: calc(1.125rem + 0.125 * (100vw - 20rem) / 62.25);
     }
-    .search-form__input::-moz-placeholder {
+    .search-form__input.input::-moz-placeholder {
       font-size: calc(1.125rem + 0.125 * (100vw - 20rem) / 62.25);
     }
-    .search-form__input:-ms-input-placeholder {
+    .search-form__input.input:-ms-input-placeholder {
       font-size: calc(1.125rem + 0.125 * (100vw - 20rem) / 62.25);
     }
-    .search-form__input::-ms-input-placeholder {
+    .search-form__input.input::-ms-input-placeholder {
       font-size: calc(1.125rem + 0.125 * (100vw - 20rem) / 62.25);
     }
-    .search-form__input::placeholder {
+    .search-form__input.input::placeholder {
       font-size: calc(1.125rem + 0.125 * (100vw - 20rem) / 62.25);
     }
 }
@@ -5821,7 +5813,7 @@ html.touch .menu__list > li > a {
     width: 100%;
   }
 
-  .header__btn:hover {
+  .header__btn.button:hover {
     background-color: transparent;
     color: #FF604A;
     border: 0.1875rem solid #FF604A;
