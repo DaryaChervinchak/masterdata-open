@@ -878,9 +878,9 @@ body::after {
 }
 
 .navigation-slider svg path {
-  -webkit-transition: opacity 0.3s ease 0s;
-  -o-transition: opacity 0.3s ease 0s;
-  transition: opacity 0.3s ease 0s;
+  -webkit-transition: fill-opacity 0.3s ease 0s;
+  -o-transition: fill-opacity 0.3s ease 0s;
+  transition: fill-opacity 0.3s ease 0s;
 }
 
 .navigation-slider_left {
@@ -6064,7 +6064,7 @@ html.touch .menu__list > li > a {
   }
 
   .navigation-slider:hover svg path {
-    opacity: 1;
+    fill-opacity: 1;
   }
 
   .header__btn.button:hover {
