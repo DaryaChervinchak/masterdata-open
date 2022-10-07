@@ -4270,15 +4270,10 @@
                 autoHeight: false,
                 speed: 800,
                 loop: true,
-                autoplay: {
-                    delay: 5e3,
-                    disableOnInteraction: false
-                },
                 pagination: {
                     el: ".main-banner__pagination",
                     clickable: true
-                },
-                on: {}
+                }
             });
         }
         if (document.querySelector(".jsServicesSlider")) {
@@ -4581,6 +4576,7 @@
     const da = new DynamicAdapt("max");
     da.init();
     document.addEventListener("DOMContentLoaded", (function(e) {
+        console.log(1);
         document.addEventListener("click", documentActions);
         function documentActions(e) {
             const targetElement = e.target;
@@ -4591,7 +4587,7 @@
                     bodyLockToggle();
                     document.documentElement.classList.remove("menu-open");
                 }
-            } else if (!targetElement.closest(".search-form") && document.body.classList.contains("_open-search")) document.body.classList.remove("_open-search");
+            } else if (!targetElement.closest(".header__bottom") && document.body.classList.contains("_open-search")) document.body.classList.remove("_open-search");
             if (targetElement.closest(".jsLinkFlip")) targetElement.closest(".item-main-service").classList.toggle("_open-card");
         }
         let checkboxItems = document.querySelectorAll(".jsCheckbox");

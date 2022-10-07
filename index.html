@@ -6,13 +6,35 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20221005191741">
+	<style>
+		.preloader {
+			position: fixed;
+			width: 100%;
+			height: 100%;
+			top: 0;
+			left: 0;
+			background: #0F0F69 url('img/common/loading.gif') center / 60px no-repeat;
+			z-index: 1000;
+			opacity: 1;
+			visibility: visible;
+			transition: all 0.8s ease 0s;
+		}
+
+		.preloader._hidden {
+			opacity: 0;
+			z-index: -1;
+			visibility: hidden;
+		}
+	</style>
+	<link rel="stylesheet" href="css/style.min.css?_v=20221007150743">
 	<link rel="shortcut icon" href="favicon.png">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <body>
+	<div class="preloader jsPreloader">
+	</div>
 	<div class="wrapper">
 		<header class="header" data-scroll="108" data-scroll-show>
 			<div class="header__inner">
@@ -46,23 +68,23 @@
 								<ul data-spollers="992,max" class="menu__list">
 									<li class="menu__item _has-submenu">
 										<a href="#" class="menu__link">Услуги</a>
-										<span data-spoller class="menu__arrow"></span>
-										<div class="menu__sublist submenu-main">
-											<div class="submenu-main__left">
-												Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil esse aspernatur similique
-												adipisci voluptate. Iure saepe eum esse, ab autem laborum sequi cupiditate dolorum
-												repudiandae nemo, illum dolores nam temporibus.
-											</div>
-											<div class="submenu-main__right">
-												Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod optio sunt nemo
-												consequuntur,
-												eius cupiditate incidunt fugiat, in ex et laborum ducimus quos dicta dolorem, iste vel
-												earum
-												corrupti accusamus?
-											</div>
-										</div>
+										<!-- <span data-spoller class="menu__arrow"></span>
+								<div class="menu__sublist submenu-main">
+									<div class="submenu-main__left">
+										Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil esse aspernatur similique
+										adipisci voluptate. Iure saepe eum esse, ab autem laborum sequi cupiditate dolorum
+										repudiandae nemo, illum dolores nam temporibus.
+									</div>
+									<div class="submenu-main__right">
+										Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod optio sunt nemo
+										consequuntur,
+										eius cupiditate incidunt fugiat, in ex et laborum ducimus quos dicta dolorem, iste vel
+										earum
+										corrupti accusamus?
+									</div>
+								</div> -->
 									</li>
-									<li class="menu__item _has-submenu">
+									<li class="menu__item">
 										<a href="#" class="menu__link" data-popup="#popup">Кейсы</a>
 									</li>
 									<li class="menu__item">
@@ -108,11 +130,12 @@
 								<div class="slide-main__container">
 									<div class="slide-main__body">
 										<div class="slide-main__left">
-											<h2 class="slide-main__title slide-main__title_medium">
-												Миграция <span class="no-wrap">на российские</span> бизнес-приложения
+											<h2 class="slide-main__title">
+												Миграция <span class="no-wrap">на российские</span> <br> бизнес-приложения
 											</h2>
 											<div class="slide-main__subtitle">
-												Помогаем перейти на альтернативные решения для сохранения текущих бизнес-процессов
+												Помогаем перейти <span class="no-wrap">на альтернативные</span> решения <span class="no-wrap">для
+													сохранения</span> текущих бизнес-процессов
 												<span class="no-wrap">и IT-поддержания</span> инфраструктуры компании
 											</div>
 											<a data-da=".slide-main__right_first, 767.98" href="#" class="slide-main__btn button">Запросить
@@ -144,14 +167,14 @@
 								<div class="slide-main__container">
 									<div class="slide-main__body">
 										<div class="slide-main__left">
-											<h2 class="slide-main__title slide-main__title_medium">Базисная поддержка <br>
-												SAP-приложений
+											<h2 class="slide-main__title">Базисная <br> поддержка
+												<span class="no-wrap">SAP-приложений</span>
 											</h2>
 											<div class="slide-main__text">
 												<p>Услуги</p>
 												<ul>
 													<li>Прокси-система разработки</li>
-													<li>Загрузка/Подготовка/Установка стека <br> обновлений SAP, SAP Note</li>
+													<li>Загрузка/Подготовка/Установка стека обновлений SAP, SAP Note</li>
 													<li>Помощь в решении инцидента</li>
 												</ul>
 											</div>
@@ -180,11 +203,13 @@
 								<div class="slide-main__container">
 									<div class="slide-main__body">
 										<div class="slide-main__left">
-											<h1 class="slide-main__title">Обращение команды</h1>
+											<h1 class="slide-main__title">Обращение <br> Команды <br>
+												Masterdata
+											</h1>
 											<div class="slide-main__subtitle">
-												Наш подход неизменен, все текущие <br> обязательства выполняются должным
-												образом,<br> <span class="no-wrap"> а забота</span> о клиентах и сотрудниках всегда
-												будет нашим приоритетом
+												Наш подход неизменен, все текущие обязательства выполняются должным образом,
+												<span class="no-wrap"> а забота</span> <span class="no-wrap">о клиентах</span>
+												<span class="no-wrap">и сотрудниках</span> всегда будет нашим приоритетом
 											</div>
 											<a data-da=".slide-main__right_third, 767.98" href="#" class="slide-main__btn button">Запросить
 												консультацию</a>
@@ -216,7 +241,7 @@
 			</section>
 			<section class="section _mb-60-15">
 				<div class="section__container">
-					<h2 class="section__title title _mb-70">Masterdata в цифрах</h2>
+					<h2 class="section__title title _mb-70">Masterdata <span class="no-wrap">в цифрах</span></h2>
 					<div class="section__content">
 						<div data-watch class="main-numbers">
 							<ul class="main-numbers__list">
@@ -289,14 +314,16 @@
 													<img src="img/home/main-services/main-services-01.svg" alt="">
 												</div>
 												<div class="item-main-service__body">
-													<h3 class="item-main-service__title">CX-решения и управление
+													<h3 class="item-main-service__title">CX-решения <span class="no-wrap">и
+															управление</span>
 														лояльностью
 													</h3>
 													<div class="item-main-service__text">
 														<p>Автоматизируем управление
-															маркетинговыми процессами в
-															организациях и помогаем повышать лояльность ваших клиентов с
-															помощью лучших IT-решений.</p>
+															маркетинговыми процессами <span class="no-wrap">в
+																организациях</span> <span class="no-wrap">и помогаем</span> повышать
+															лояльность ваших клиентов <span class="no-wrap">с
+																помощью</span> лучших IT-решений.</p>
 													</div>
 													<button class="item-main-service__button link link-underline jsLinkFlip">Подробнее
 													</button>
@@ -306,12 +333,14 @@
 												<div class="item-main-service__body">
 													<div class="item-main-service__text">
 														<ul>
-															<li>Внедрение и поддержка систем управления лояльностью​</li>
-															<li>Внедрение и поддержка Digital marketing management решений
+															<li>Внедрение <span class="no-wrap">и поддержка</span> систем управления
+																лояльностью​</li>
+															<li>Внедрение <span class="no-wrap">и поддержка</span> Digital marketing
+																management решений
 															</li>
-															<li>Помощь в выборе новой CRM-системы</li>
+															<li>Помощь <span class="no-wrap">в выборе</span> новой CRM-системы</li>
 															<li>Аудит текущей CRM-системы</li>
-															<li>IT-консалтинг и разработка стратегии
+															<li>IT-консалтинг <span class="no-wrap">и разработка</span> стратегии
 																внедрения</li>
 														</ul>
 													</div>
@@ -331,7 +360,8 @@
 													<div class="item-main-service__text">
 														<p>Наши эксперты помогают упростить <span class="no-wrap">и
 																автоматизировать</span> процесс
-															управления предприятием за счет предложения лидирующих на рынке
+															управления предприятием <span class="no-wrap">за счет</span> предложения
+															лидирующих на рынке
 															BPM-решений.</p>
 													</div>
 													<button class="item-main-service__button link link-underline jsLinkFlip">Подробнее
@@ -343,11 +373,16 @@
 													<div class="item-main-service__text">
 														<ul>
 															<li>Анализ бизнес-процессов​</li>
-															<li>Настройка существующей CRM-системы в соответствии с
-																потребностями бизнеса</li>
-															<li>IT-консалтинг и разработка стратегии внедрения</li>
-															<li>Аудит, улучшение и поддержка текущего решения</li>
-															<li>Внедрение и поддержка облачных сервисов</li>
+															<li>Настройка существующей CRM-системы
+																<span class="no-wrap">в соответствии</span>
+																<span class="no-wrap">с потребностями</span> бизнеса
+															</li>
+															<li>IT-консалтинг <span class="no-wrap">и разработка</span> стратегии
+																внедрения</li>
+															<li>Аудит, улучшение <span class="no-wrap">и поддержка</span> текущего
+																решения</li>
+															<li>Внедрение <span class="no-wrap">и поддержка</span> облачных сервисов
+															</li>
 														</ul>
 													</div>
 													<button class="item-main-service__button link link-underline jsLinkFlip">Обратно</button>
@@ -364,8 +399,9 @@
 												<div class="item-main-service__body">
 													<h3 class="item-main-service__title">eCommerce решения</h3>
 													<div class="item-main-service__text">
-														<p>Предлагаем комплексные решения для E-Commerce и помогаем внедрить
-															технологическую инфраструктуру, чтобы <br> удовлетворить
+														<p>Предлагаем комплексные решения для E-Commerce <span class="no-wrap">и
+																помогаем</span> внедрить
+															технологическую инфраструктуру, чтобы удовлетворить
 															потребности
 															ваших клиентов.</p>
 													</div>
@@ -379,11 +415,12 @@
 														<ul>
 															<li>Аудит E-commerce</li>
 															<li>Разработка E-commerce стратегии</li>
-															<li>Внедрение и поддержка Digital Commerce решений</li>
-															<li>Консалгинг в E-commerce</li>
+															<li>Внедрение <span class="no-wrap">и поддержка</span> Digital Commerce
+																решений</li>
+															<li>Консалгинг <span class="no-wrap"> в E-commerce</span></li>
 															<li>Разработка модели маркетплейса</li>
 															<li>Оптимизация работы интернет-магазина</li>
-															<li>Поддержка и обучение команд</li>
+															<li>Поддержка <span class="no-wrap">и обучение</span> команд</li>
 														</ul>
 													</div>
 													<button class="item-main-service__button link link-underline jsLinkFlip">Обратно</button>
@@ -402,9 +439,9 @@
 														Management
 													</h3>
 													<div class="item-main-service__text">
-														<p>Мы помогаем клиентам анализировать и прогнозировать
-															бизнес-потребности, разрабатывать эффективные каналы передачи
-															данных.</p>
+														<p>Мы помогаем клиентам анализировать <span class="no-wrap">и
+																прогнозировать</span> бизнес-потребности, разрабатывать эффективные
+															каналы передачи данных.</p>
 													</div>
 													<button class="item-main-service__button link link-underline jsLinkFlip">Подробнее
 													</button>
@@ -416,8 +453,10 @@
 														<ul>
 															<li>Внедрение BI-систем для управления данными</li>
 															<li>Data Science & Machine Learning</li>
-															<li>Планирование и консолидация на основе данных</li>
-															<li>Внедрение и поддержка облачных BI-решений</li>
+															<li>Планирование <span class="no-wrap">и консолидация</span> <span class="no-wrap">на основе</span>
+																данных</li>
+															<li>Внедрение <span class="no-wrap">и поддержка</span> облачных BI-решений
+															</li>
 														</ul>
 													</div>
 													<button class="item-main-service__button link link-underline jsLinkFlip">Обратно</button>
@@ -434,10 +473,10 @@
 												<div class="item-main-service__body">
 													<h3 class="item-main-service__title">RPA-решения</h3>
 													<div class="item-main-service__text">
-														<p>Предлагаем услуги по внедрению <span class="no-wrap">и поддержке
-															</span> RPA-платформ для
-															автоматизаци бизнес-процессов <span class="no-wrap">с
-																помощью</span> технологий <br> роботизации.
+														<p>Предлагаем услуги <span class="no-wrap">по внедрению</span> <span class="no-wrap">и поддержке
+															</span> RPA-платформ <span class="no-wrap">для автоматизаци</span>
+															бизнес-процессов <span class="no-wrap">с помощью</span> технологий
+															роботизации.
 														</p>
 													</div>
 													<button class="item-main-service__button link link-underline jsLinkFlip">Подробнее
@@ -468,7 +507,8 @@
 													<h3 class="item-main-service__title">HR-tech решения <br> & HCM/WFM</h3>
 													<div class="item-main-service__text">
 														<p>Помогаем управлять опытом сотрудников (HXM), находить <span class="no-wrap">и обучать</span>
-															кадры, ставить целии мотивировать на результаты.</p>
+															кадры, ставить целии мотивировать <span class="no-wrap">на
+																результаты</span>.</p>
 													</div>
 													<button class="item-main-service__button link link-underline jsLinkFlip">Подробнее
 													</button>
@@ -478,9 +518,10 @@
 												<div class="item-main-service__body">
 													<div class="item-main-service__text">
 														<ul>
-															<li>Находите и обучайте кадры</li>
+															<li>Находите <span class="no-wrap">и обучайте</span> кадры</li>
 															<li> Ставьте цели перед людьми</li>
-															<li> Мотивируйте сотрудниковна получение результатов</li>
+															<li> Мотивируйте сотрудников <span class="no-wrap">на получение</span>
+																результатов</li>
 														</ul>
 													</div>
 													<button class="item-main-service__button link link-underline jsLinkFlip">Обратно</button>
@@ -498,8 +539,8 @@
 													<h3 class="item-main-service__title">Управленческийи IT-консалтинг
 													</h3>
 													<div class="item-main-service__text">
-														<p>Мы оказываем услуги бизнес- и ИТ-консалтинга для разных индустрий
-															более 16 лет.</p>
+														<p>Мы оказываем услуги бизнес- <span class="no-wrap">и ИТ-консалтинга</span>
+															для разных индустрий более 16 лет.</p>
 													</div>
 													<button class="item-main-service__button link link-underline jsLinkFlip">Подробнее
 													</button>
@@ -514,7 +555,7 @@
 															<li>ИТ-аудит</li>
 															<li>Консалтинг оптимизации ИТ-инфраструктуры</li>
 															<li>Управление мощностями ИТ-услуг</li>
-															<li>Стратегия развития и оптимизации ЦОД </li>
+															<li>Стратегия развития <span class="no-wrap">и оптимизации</span> ЦОД </li>
 															<li>Оценка безопасности ит-инфраструктуры</li>
 														</ul>
 													</div>
@@ -533,7 +574,8 @@
 													<h3 class="item-main-service__title">Базисная поддержка SAP-решений
 													</h3>
 													<div class="item-main-service__text">
-														<p>Благодаря многолетнему опыту работы с SAP-решениями и расширенной
+														<p>Благодаря многолетнему опыту работы <span class="no-wrap">с
+																SAP-решениями</span> <span class="no-wrap">и расширенной</span>
 															экспертизе команды <span class="no-wrap">за счет</span> продуктов
 															российских партнеров.</p>
 													</div>
@@ -548,7 +590,7 @@
 															<li>«Прокси-система разработки»​</li>
 															<li>«Загрузка, Подготовка, Установка стека обновлений SAP»</li>
 															<li>«Загрузка, Подготовка, Установка SAP Note»</li>
-															<li>Услуга «Помощь в решении инцидента»​</li>
+															<li>Услуга «Помощь <span class="no-wrap">в решении</span> инцидента»​</li>
 															<li>Сервис «Базисная поддержка SAP-систем»</li>
 														</ul>
 													</div>
@@ -559,7 +601,6 @@
 									</div>
 								</div>
 								<div class="main-services__pagination pagination-slider swiper-pagination _blue"></div>
-
 							</div>
 							<div class="main-services__navigation navigation-slider navigation-slider_left swiper-button-prev">
 								<svg width="41" height="72" viewBox="0 0 41 72" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -618,8 +659,8 @@
 											<div class="item-main-advantage__number">
 												02
 											</div>
-											<div class="item-main-advantage__text">Сертифицированные специалисты по всем
-												направлениям для внедрения решений «под ключ»</div>
+											<div class="item-main-advantage__text">Сертифицированные специалисты <span class="no-wrap">по всем</span>
+												направлениям <span class="no-wrap">для внедрения</span> решений «под ключ»</div>
 										</div>
 									</li>
 									<li class="main-advantages__item">
@@ -627,8 +668,10 @@
 											<div class="item-main-advantage__number">
 												03
 											</div>
-											<div class="item-main-advantage__text">Непрерывное обучение <span class="no-wrap">команд и </span> сертификация <span class="no-wrap">от
-													вендоров</span> </div>
+											<div class="item-main-advantage__text">Непрерывное обучение команд
+												<span class="no-wrap"> и сертификация</span>
+												<span class="no-wrap">от вендоров</span>
+											</div>
 										</div>
 									</li>
 									<li class="main-advantages__item">
@@ -638,7 +681,7 @@
 											</div>
 											<div class="item-main-advantage__text">Надежные партнеры <span class="no-wrap">с
 													портфелем</span> IT-продуктов,
-												входящих в реестр импортозамещения</div>
+												входящих <span class="no-wrap">в реестр</span> импортозамещения</div>
 										</div>
 									</li>
 									<li class="main-advantages__item">
@@ -647,7 +690,8 @@
 												05
 											</div>
 											<div class="item-main-advantage__text">Комплексное сопровождение проектов: единая
-												команда <span class="no-wrap">от консалтинга</span> до поддержки​</div>
+												команда <span class="no-wrap">от консалтинга</span> <span class="no-wrap">до
+													поддержки</span></div>
 										</div>
 									</li>
 									<li class="main-advantages__item">
@@ -655,8 +699,8 @@
 											<div class="item-main-advantage__number">
 												06
 											</div>
-											<div class="item-main-advantage__text">Глубокое знание рынка зарубежных и российских
-												технологий для решения ваших бизнес-задач​</div>
+											<div class="item-main-advantage__text">Глубокое знание рынка зарубежных <span class="no-wrap">и российских</span>
+												технологий <span class="no-wrap">для решения</span> ваших бизнес-задач​</div>
 										</div>
 									</li>
 								</ul>
@@ -669,7 +713,7 @@
 				<div class="main-approach__wrapper">
 					<h2 class="main-approach__title title title_white">Наш подход</h2>
 					<p class="main-approach__subtitle">Проводим предпроектный анализ, создаем архитектуру проекта,<br>
-						составляем спецификации и внедряем решения</p>
+						составляем спецификации <span class="no-wrap">и внедряем</span> решения</p>
 					<div class="main-approach__content">
 						<div class="main-approach__left">
 							<div class="main-approach__img">
@@ -730,10 +774,10 @@
 					<div class="section__content">
 						<ul class="similar-records">
 							<li class="similar-records__item">
-								<article class="item-client">
-									<a href="#" class="item-client__image-ibg">
+								<a href="#" class="item-client">
+									<div class="item-client__image-ibg">
 										<img src="img/home/similar-records/item-client-01.jpg" alt="">
-									</a>
+									</div>
 									<div class="item-client__body">
 										<div class="item-client__logo">
 											<img src="img/home/similar-records/item-client-logo-01.png" alt="">
@@ -741,19 +785,19 @@
 										<h4 class="item-client__title">
 											Розничная торговля
 										</h4>
-										<a href="#" class="item-client__link link link_arrow">Читать далее
+										<p class="item-client__link link link_arrow">Читать далее
 											<svg width="36" height="19" viewBox="0 0 36 19" fill="none" xmlns="http://www.w3.org/2000/svg">
 												<path d="M36 9.38583C35.9852 9.0502 35.8294 8.66218 35.5698 8.41756L27.099 0.437148C26.5252 -0.020286 25.4243 -0.208893 24.7829 0.319927C24.151 0.840884 24.1699 1.85074 24.7991 2.37364L30.755 7.97753H1.58832C0.71127 7.97753 0 8.60818 0 9.38588C0 10.1636 0.711241 10.7942 1.58832 10.7942H30.755L24.7991 16.3981C24.257 16.8795 24.1569 17.9253 24.7829 18.4518C25.4084 18.9787 26.5485 18.8104 27.099 18.3343L35.5698 10.3539C35.8597 10.0808 36.0007 9.76044 36 9.38583Z" fill="#6134EA" />
 											</svg>
-										</a>
+										</p>
 									</div>
-								</article>
+								</a>
 							</li>
 							<li class="similar-records__item">
-								<article class="item-client">
-									<a href="#" class="item-client__image-ibg">
+								<a href="#" class="item-client">
+									<div class="item-client__image-ibg">
 										<img src="img/home/similar-records/item-client-02.jpg" alt="">
-									</a>
+									</div>
 									<div class="item-client__body">
 										<div class="item-client__logo">
 											<img src="img/home/similar-records/item-client-logo-02.png" alt="">
@@ -761,19 +805,19 @@
 										<h4 class="item-client__title">
 											Строительство
 										</h4>
-										<a href="#" class="item-client__link link link_arrow">Читать далее
+										<p class="item-client__link link link_arrow">Читать далее
 											<svg width="36" height="19" viewBox="0 0 36 19" fill="none" xmlns="http://www.w3.org/2000/svg">
 												<path d="M36 9.38583C35.9852 9.0502 35.8294 8.66218 35.5698 8.41756L27.099 0.437148C26.5252 -0.020286 25.4243 -0.208893 24.7829 0.319927C24.151 0.840884 24.1699 1.85074 24.7991 2.37364L30.755 7.97753H1.58832C0.71127 7.97753 0 8.60818 0 9.38588C0 10.1636 0.711241 10.7942 1.58832 10.7942H30.755L24.7991 16.3981C24.257 16.8795 24.1569 17.9253 24.7829 18.4518C25.4084 18.9787 26.5485 18.8104 27.099 18.3343L35.5698 10.3539C35.8597 10.0808 36.0007 9.76044 36 9.38583Z" fill="#6134EA" />
 											</svg>
-										</a>
+										</p>
 									</div>
-								</article>
+								</a>
 							</li>
 							<li class="similar-records__item">
-								<article class="item-client">
-									<a href="#" class="item-client__image-ibg">
+								<a href="#" class="item-client">
+									<div class="item-client__image-ibg">
 										<img src="img/home/similar-records/item-client-03.jpg" alt="">
-									</a>
+									</div>
 									<div class="item-client__body">
 										<div class="item-client__logo">
 											<img src="img/home/similar-records/item-client-logo-03.png" alt="">
@@ -781,13 +825,13 @@
 										<h4 class="item-client__title">
 											Розничная торговля
 										</h4>
-										<a href="#" class="item-client__link link link_arrow">Читать далее
+										<p class="item-client__link link link_arrow">Читать далее
 											<svg width="36" height="19" viewBox="0 0 36 19" fill="none" xmlns="http://www.w3.org/2000/svg">
 												<path d="M36 9.38583C35.9852 9.0502 35.8294 8.66218 35.5698 8.41756L27.099 0.437148C26.5252 -0.020286 25.4243 -0.208893 24.7829 0.319927C24.151 0.840884 24.1699 1.85074 24.7991 2.37364L30.755 7.97753H1.58832C0.71127 7.97753 0 8.60818 0 9.38588C0 10.1636 0.711241 10.7942 1.58832 10.7942H30.755L24.7991 16.3981C24.257 16.8795 24.1569 17.9253 24.7829 18.4518C25.4084 18.9787 26.5485 18.8104 27.099 18.3343L35.5698 10.3539C35.8597 10.0808 36.0007 9.76044 36 9.38583Z" fill="#6134EA" />
 											</svg>
-										</a>
+										</p>
 									</div>
-								</article>
+								</a>
 							</li>
 						</ul>
 					</div>
@@ -866,8 +910,7 @@
 			<section class="section _bg-purple _padding-90">
 				<div class="section__container">
 					<h2 class="section__title title _mb-30">Команда</h2>
-					<p class="section__subtitle _mb-60">Владеем полным перечнем инхаус всех необходимых экспертиз для
-						разработки вашего проекта</p>
+					<p class="section__subtitle _mb-60">Владеем полным перечнем инхаус всех необходимых экспертиз <span class="no-wrap">для разработки</span> <span class="no-wrap">вашего проекта</span></p>
 					<div class="section__content">
 						<div class="main-team">
 							<ul class="main-team__list">
@@ -952,7 +995,8 @@
 							<div class="main-consultant__content">
 								<h4 class="main-consultant__title title">Новости
 								</h4>
-								<p class="main-consultant__text">«ЭМБЕР» и Masterdata теперь партнеры: совместная экспертиза
+								<p class="main-consultant__text">«ЭМБЕР» <span class="no-wrap">и Masterdata</span> теперь
+									партнеры: совместная экспертиза
 									откроет новые возможности</p>
 								<a href="#" class="main-consultant__link">
 									<svg width="59" height="30" viewBox="0 0 59 30" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -1065,9 +1109,10 @@
 									<div class="main-form__checkbox checkbox">
 										<input id="checkbox_1" class="checkbox__input jsCheckbox" type="checkbox" value="1" name="form[]">
 										<label for="checkbox_1" class="checkbox__label"><span class="checkbox__text">Подписываясь
-												на
-												рассылку, вы даете согласие на обработку персональных данных. Рассылка
-												осуществляется один раз в квартал. </span></label>
+												<span class="no-wrap">на рассылку</span>, вы даете согласие <span class="no-wrap">на
+													обработку</span>
+												персональных данных. Рассылка
+												осуществляется один раз <span class="no-wrap">в квартал</span>. </span></label>
 									</div>
 									<button type="submit" disabled class="main-form__button button button_blue">Подписаться
 										на
@@ -1079,10 +1124,10 @@
 									<img src="img/home/main-subscription/main-subscription.png" alt="">
 									<div class="main-subscription__decors">
 										<div class="main-subscription__decor main-subscription__decor_first">
-											<img src="img/home/main-banner/decor-01.png" alt="">
+											<img data-prlx-mouse data-prlx-cx="38" data-prlx-cy="38" data-prlx-dxr src="img/home/main-banner/decor-01.png" alt="">
 										</div>
 										<div class="main-subscription__decor main-subscription__decor_second">
-											<img src="img/home/main-subscription/main-subscription-decor-02.png" alt="">
+											<img data-prlx-mouse data-prlx-cx="18" data-prlx-cy="18" data-prlx-dyr src="img/home/main-subscription/main-subscription-decor-02.png" alt="">
 										</div>
 									</div>
 								</div>
@@ -1262,7 +1307,13 @@
 			</div>
 		</div>
 	</div>
-	<script src="js/app.min.js?_v=20221005191741"></script>
+	<script>
+		window.onload = function() {
+			let preloader = document.querySelector(".jsPreloader");
+			preloader.classList.add("_hidden");
+		}
+	</script>
+	<script src="js/app.min.js?_v=20221007150743"></script>
 </body>
 
 </html>
