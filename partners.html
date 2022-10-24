@@ -30,7 +30,7 @@
 			visibility: hidden;
 		}
 	</style>
-	<link rel="stylesheet" href="css/style.min.css?_v=20221024121508">
+	<link rel="stylesheet" href="css/style.min.css?_v=20221024125809">
 	<link rel="shortcut icon" href="favicon.png">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -40,11 +40,11 @@
 	<div class="preloader jsPreloader">
 	</div>
 	<div class="wrapper">
-		<header class="header" data-scroll="108" data-scroll-show>
+		<header data-lp class="header" data-scroll="108" data-scroll-show>
 			<div class="header__inner">
 				<div class="header__container">
 					<div class="header__wrapper">
-						<a href="/" class="header__logo">
+						<a href="index.html" class="header__logo">
 							<svg viewBox="0 0 225 55" fill="none" xmlns="http://www.w3.org/2000/svg">
 								<g clip-path="url(#clip0_133_49)">
 									<path d="M88.2596 27.3216V36.7246H85.024V27.5347C85.024 25.4428 83.9156 24.2293 82.1152 24.2293C80.1086 24.2293 78.8496 25.5645 78.8496 28.2306V36.7246H75.6142V27.5347C75.6142 25.4428 74.5959 24.2293 72.7955 24.2293C70.849 24.2293 69.4698 25.595 69.4698 28.2306V36.7246H66.2344V21.5589H69.4698V23.3812C70.428 21.8937 71.8674 21.1675 73.7537 21.1675C75.67 21.1675 77.0794 21.9548 78.0075 23.564C78.9957 21.9548 80.5253 21.1675 82.5921 21.1675C85.9823 21.1631 88.2596 23.5596 88.2596 27.3216Z" fill="#0F0F69" />
@@ -79,74 +79,80 @@
 									<li class="menu__item _has-submenu">
 										<a href="industries.html" class="menu__link">Отрасли</a>
 										<span data-spoller class="menu__arrow"></span>
-										<div class="menu__sublist submenu-main">
-											<div class="submenu-main__body">
-												<div class="submenu-main__left">
-													<div class="submenu-main__img">
-														<img src="img/header/magnifier.png" alt="">
-													</div>
-													<p class="submenu-main__title">Отрасли</p>
-													<p class="submenu-main__text">Наши эксперты обладают обширной экспертизой <span class="no-wrap">и
-															готовы</span> предложить решение бизнес-задач <span class="no-wrap"> под
-															конкретную</span>
-														индустрию
-													</p>
-													<a href="#" class="submenu-main__button button button_border">Все отрасли</a>
-												</div>
-												<div class="submenu-main__right">
-													<div class="submenu-main__column">
-														<a href="#" class="submenu-main__category link-underline">Ритейл и FMGG</a>
-														<ul class="submenu-main__list">
-															<li class="submenu-main__item">Продовольственные товары</li>
-															<li class="submenu-main__item">Непродовольственные товары</li>
-															<li class="submenu-main__item">Fashion retail</li>
-															<li class="submenu-main__item">E-Commerce & Marketplaces</li>
-														</ul>
-														<a href="#" class="submenu-main__category link-underline">Финансовый сектор</a>
-														<ul class="submenu-main__list">
-															<li class="submenu-main__item">Банкинг</li>
-															<li class="submenu-main__item">Страхование</li>
-															<li class="submenu-main__item">Платежные системы</li>
-															<li class="submenu-main__item">Финтех</li>
-														</ul>
-														<a href="#" class="submenu-main__category link-underline">Производство <span class="no-wrap">и
-																дистрибуция</span></a>
-														<ul class="submenu-main__list">
-															<li class="submenu-main__item">Агропромышленность</li>
-															<li class="submenu-main__item">Промышленное производство</li>
-															<li class="submenu-main__item">Автомобильная промышленность</li>
-															<li class="submenu-main__item">Грузоперевозки <span class="no-wrap">и
-																	логистика</span></li>
-															<li class="submenu-main__item">Транспортные перевозки</li>
-														</ul>
-													</div>
-													<div class="submenu-main__column">
-														<a href="#" class="submenu-main__category link-underline">Технологии, медиа <span class="no-wrap">и
-																телекоммуникации</span></a>
-														<ul class="submenu-main__list">
-															<li class="submenu-main__item">Комммуникационные провайдеры</li>
-															<li class="submenu-main__item">Технологичное производство</li>
-															<li class="submenu-main__item">Медиакомпании</li>
-														</ul>
-														<a href="#" class="submenu-main__category link-underline">Энергетика</a>
-														<ul class="submenu-main__list">
-															<li class="submenu-main__item">Химическая промышленность</li>
-															<li class="submenu-main__item">Нефтегазовая промышленность <span class="no-wrap">и
-																	энергетика</span></li>
-															<li class="submenu-main__item">Металлургия</li>
-														</ul>
-														<a href="#" class="submenu-main__category link-underline">Здравоохранения <span class="no-wrap">и
-																фармацевтика</span></a>
-														<ul class="submenu-main__list">
-															<li class="submenu-main__item">Фармацевтические компании</li>
-															<li class="submenu-main__item">Поставщики фармацевтических препаратов <span class="no-wrap">и услуг</span></li>
-															<li class="submenu-main__item">Медицинские технологии</li>
-														</ul>
-													</div>
-												</div>
-												<div class="submenu-main__decor"></div>
-											</div>
-										</div>
+										<!-- <div class="menu__sublist submenu-main">
+ 									<div class="submenu-main__body">
+ 										<div class="submenu-main__left">
+ 											<div class="submenu-main__img">
+ 												<img src="img/header/magnifier.png" alt="">
+ 											</div>
+ 											<p class="submenu-main__title">Отрасли</p>
+ 											<p class="submenu-main__text">Наши эксперты обладают обширной экспертизой <span
+ 													class="no-wrap">и
+ 													готовы</span> предложить решение бизнес-задач <span class="no-wrap"> под
+ 													конкретную</span>
+ 												индустрию
+ 											</p>
+ 											<a href="#" class="submenu-main__button button button_border">Все отрасли</a>
+ 										</div>
+ 										<div class="submenu-main__right">
+ 											<div class="submenu-main__column">
+ 												<a href="#" class="submenu-main__category link-underline">Ритейл и FMGG</a>
+ 												<ul class="submenu-main__list">
+ 													<li class="submenu-main__item">Продовольственные товары</li>
+ 													<li class="submenu-main__item">Непродовольственные товары</li>
+ 													<li class="submenu-main__item">Fashion retail</li>
+ 													<li class="submenu-main__item">E-Commerce & Marketplaces</li>
+ 												</ul>
+ 												<a href="#" class="submenu-main__category link-underline">Финансовый сектор</a>
+ 												<ul class="submenu-main__list">
+ 													<li class="submenu-main__item">Банкинг</li>
+ 													<li class="submenu-main__item">Страхование</li>
+ 													<li class="submenu-main__item">Платежные системы</li>
+ 													<li class="submenu-main__item">Финтех</li>
+ 												</ul>
+ 												<a href="#" class="submenu-main__category link-underline">Производство <span
+ 														class="no-wrap">и
+ 														дистрибуция</span></a>
+ 												<ul class="submenu-main__list">
+ 													<li class="submenu-main__item">Агропромышленность</li>
+ 													<li class="submenu-main__item">Промышленное производство</li>
+ 													<li class="submenu-main__item">Автомобильная промышленность</li>
+ 													<li class="submenu-main__item">Грузоперевозки <span class="no-wrap">и
+ 															логистика</span></li>
+ 													<li class="submenu-main__item">Транспортные перевозки</li>
+ 												</ul>
+ 											</div>
+ 											<div class="submenu-main__column">
+ 												<a href="#" class="submenu-main__category link-underline">Технологии, медиа <span
+ 														class="no-wrap">и
+ 														телекоммуникации</span></a>
+ 												<ul class="submenu-main__list">
+ 													<li class="submenu-main__item">Комммуникационные провайдеры</li>
+ 													<li class="submenu-main__item">Технологичное производство</li>
+ 													<li class="submenu-main__item">Медиакомпании</li>
+ 												</ul>
+ 												<a href="#" class="submenu-main__category link-underline">Энергетика</a>
+ 												<ul class="submenu-main__list">
+ 													<li class="submenu-main__item">Химическая промышленность</li>
+ 													<li class="submenu-main__item">Нефтегазовая промышленность <span
+ 															class="no-wrap">и
+ 															энергетика</span></li>
+ 													<li class="submenu-main__item">Металлургия</li>
+ 												</ul>
+ 												<a href="#" class="submenu-main__category link-underline">Здравоохранения <span
+ 														class="no-wrap">и
+ 														фармацевтика</span></a>
+ 												<ul class="submenu-main__list">
+ 													<li class="submenu-main__item">Фармацевтические компании</li>
+ 													<li class="submenu-main__item">Поставщики фармацевтических препаратов <span
+ 															class="no-wrap">и услуг</span></li>
+ 													<li class="submenu-main__item">Медицинские технологии</li>
+ 												</ul>
+ 											</div>
+ 										</div>
+ 										<div class="submenu-main__decor"></div>
+ 									</div>
+ 								</div> -->
 									</li>
 									<li class="menu__item">
 										<a href="industries.html" class="menu__link">Партнеры</a>
@@ -943,9 +949,9 @@
 			preloader.classList.add("_hidden");
 		}
 	</script>
-	<script src="https://code.jquery.com/jquery-3.6.1.min.js?_v=20221024121508" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.form/4.3.0/jquery.form.min.js?_v=20221024121508" integrity="sha384-qlmct0AOBiA2VPZkMY3+2WqkHtIQ9lSdAsAn5RUJD/3vA5MKDgSGcdmIv4ycVxyn" crossorigin="anonymous"></script>
-	<script src="js/app.min.js?_v=20221024121508"></script>
+	<script src="https://code.jquery.com/jquery-3.6.1.min.js?_v=20221024125809" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.form/4.3.0/jquery.form.min.js?_v=20221024125809" integrity="sha384-qlmct0AOBiA2VPZkMY3+2WqkHtIQ9lSdAsAn5RUJD/3vA5MKDgSGcdmIv4ycVxyn" crossorigin="anonymous"></script>
+	<script src="js/app.min.js?_v=20221024125809"></script>
 </body>
 
 </html>

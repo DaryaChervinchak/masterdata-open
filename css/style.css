@@ -438,6 +438,7 @@ body::after {
 
 .popup__close {
   position: absolute;
+  z-index: 10;
 }
 
 .popup__close svg {
@@ -6968,7 +6969,6 @@ html.touch .menu__list > li > a {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 60%;
             flex: 0 0 60%;
-    margin-bottom: 0.3125rem;
   }
 
   .quote-industry__top {
