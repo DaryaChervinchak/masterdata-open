@@ -4739,7 +4739,8 @@
             if (window.innerWidth > 991.98 && isMobile.any()) {
                 const menuItems = document.querySelectorAll(".menu__item._hover");
                 if (targetElement.closest(".menu__arrow")) {
-                    if (menuItems.length > 0) removeClasses(menuItems, "_hover");
+                    const activeMenuItem = document.querySelector(".menu__item._hover");
+                    if (activeMenuItem && activeMenuItem !== targetElement.closest(".menu__item")) activeMenuItem.classList.remove("_hover");
                     targetElement.closest(".menu__item").classList.toggle("_hover");
                 }
                 if (!targetElement.closest(".menu__item") && menuItems.length > 0) removeClasses(menuItems, "_hover");
