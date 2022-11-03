@@ -7094,7 +7094,7 @@ body::after {
   }
 
   ._purple._violet-bg .tabs-industry__title._tab-active::after {
-    background: url("../img/common/triangle.svg") 0 0 no-repeat;
+    background: url("../img/common/triangle-down.svg") 0 0 no-repeat;
   }
 
   .tabs-industry__title._tab-active::after {
@@ -7129,7 +7129,7 @@ body::after {
     top: 50%;
     width: 2.3125rem;
     height: 1rem;
-    background: url("../img/common/triangle.svg") 0 0 no-repeat;
+    background: url("../img/common/triangle-down.svg") 0 0 no-repeat;
     -webkit-transform: translate(0, -50%) rotate(-90deg);
         -ms-transform: translate(0, -50%) rotate(-90deg);
             transform: translate(0, -50%) rotate(-90deg);
