@@ -2175,6 +2175,7 @@ body::after {
 }
 
 .item-client__image-ibg img {
+  border-radius: 1.25rem 1.25rem 0 0;
   height: 101%;
   width: 101%;
   will-change: transform;
@@ -6334,31 +6335,31 @@ body::after {
   }
 
   .item-main-client_elma img {
-    max-width: 9rem;
+    max-width: 7.75rem;
   }
 
   .item-main-client_goodt img {
-    max-width: 6rem;
+    max-width: 4.75rem;
   }
 
   .item-main-client_amber img {
-    max-width: 9.75rem;
+    max-width: 7.25rem;
   }
 
   .item-main-client_comindware img {
-    max-width: 10.75rem;
+    max-width: 8.875rem;
   }
 
   .item-main-client_altcraft img {
-    max-width: 8.3125rem;
+    max-width: 7.6875rem;
   }
 
   .item-main-client_1c img {
-    max-width: 10.625rem;
+    max-width: 10rem;
   }
 
   .item-main-client_lennuf img {
-    max-width: 9.375rem;
+    max-width: 8.125rem;
   }
 
   .item-main-client_pix img {
@@ -7145,7 +7146,7 @@ body::after {
   }
 
   .tabs-industry__list {
-    padding: 1.875rem 0;
+    padding: 0.625rem 0 3.125rem;
   }
 
   .tabs-industry__item {
@@ -9584,87 +9585,87 @@ body::after {
     }
 }
 
-@supports (max-width: clamp( 9rem , 6.1291866029rem  +  9.5693779904vw , 14rem )) {
+@supports (max-width: clamp( 7.75rem , 4.1614832536rem  +  11.961722488vw , 14rem )) {
     .item-main-client_elma img {
-      max-width: clamp( 9rem , 6.1291866029rem  +  9.5693779904vw , 14rem );
+      max-width: clamp( 7.75rem , 4.1614832536rem  +  11.961722488vw , 14rem );
     }
 }
 
-@supports not (max-width: clamp( 9rem , 6.1291866029rem  +  9.5693779904vw , 14rem )) {
+@supports not (max-width: clamp( 7.75rem , 4.1614832536rem  +  11.961722488vw , 14rem )) {
     .item-main-client_elma img {
-      max-width: calc(9rem + 5 * (100vw - 30rem) / 52.25);
+      max-width: calc(7.75rem + 6.25 * (100vw - 30rem) / 52.25);
     }
 }
 
-@supports (max-width: clamp( 6rem , 4.2775119617rem  +  5.7416267943vw , 9rem )) {
+@supports (max-width: clamp( 4.75rem , 2.3098086124rem  +  8.1339712919vw , 9rem )) {
     .item-main-client_goodt img {
-      max-width: clamp( 6rem , 4.2775119617rem  +  5.7416267943vw , 9rem );
+      max-width: clamp( 4.75rem , 2.3098086124rem  +  8.1339712919vw , 9rem );
     }
 }
 
-@supports not (max-width: clamp( 6rem , 4.2775119617rem  +  5.7416267943vw , 9rem )) {
+@supports not (max-width: clamp( 4.75rem , 2.3098086124rem  +  8.1339712919vw , 9rem )) {
     .item-main-client_goodt img {
-      max-width: calc(6rem + 3 * (100vw - 30rem) / 52.25);
+      max-width: calc(4.75rem + 4.25 * (100vw - 30rem) / 52.25);
     }
 }
 
-@supports (max-width: clamp( 9.75rem , 7.6686602871rem  +  6.9377990431vw , 13.375rem )) {
+@supports (max-width: clamp( 7.25rem , 3.7332535885rem  +  11.7224880383vw , 13.375rem )) {
     .item-main-client_amber img {
-      max-width: clamp( 9.75rem , 7.6686602871rem  +  6.9377990431vw , 13.375rem );
+      max-width: clamp( 7.25rem , 3.7332535885rem  +  11.7224880383vw , 13.375rem );
     }
 }
 
-@supports not (max-width: clamp( 9.75rem , 7.6686602871rem  +  6.9377990431vw , 13.375rem )) {
+@supports not (max-width: clamp( 7.25rem , 3.7332535885rem  +  11.7224880383vw , 13.375rem )) {
     .item-main-client_amber img {
-      max-width: calc(9.75rem + 3.625 * (100vw - 30rem) / 52.25);
+      max-width: calc(7.25rem + 6.125 * (100vw - 30rem) / 52.25);
     }
 }
 
-@supports (max-width: clamp( 10.75rem , 7.9509569378rem  +  9.3301435407vw , 15.625rem )) {
+@supports (max-width: clamp( 8.875rem , 4.9994019139rem  +  12.9186602871vw , 15.625rem )) {
     .item-main-client_comindware img {
-      max-width: clamp( 10.75rem , 7.9509569378rem  +  9.3301435407vw , 15.625rem );
+      max-width: clamp( 8.875rem , 4.9994019139rem  +  12.9186602871vw , 15.625rem );
     }
 }
 
-@supports not (max-width: clamp( 10.75rem , 7.9509569378rem  +  9.3301435407vw , 15.625rem )) {
+@supports not (max-width: clamp( 8.875rem , 4.9994019139rem  +  12.9186602871vw , 15.625rem )) {
     .item-main-client_comindware img {
-      max-width: calc(10.75rem + 4.875 * (100vw - 30rem) / 52.25);
+      max-width: calc(8.875rem + 6.75 * (100vw - 30rem) / 52.25);
     }
 }
 
-@supports (max-width: clamp( 8.3125rem , 5.6928827751rem  +  8.7320574163vw , 12.875rem )) {
+@supports (max-width: clamp( 7.6875rem , 4.7090311005rem  +  9.9282296651vw , 12.875rem )) {
     .item-main-client_altcraft img {
-      max-width: clamp( 8.3125rem , 5.6928827751rem  +  8.7320574163vw , 12.875rem );
+      max-width: clamp( 7.6875rem , 4.7090311005rem  +  9.9282296651vw , 12.875rem );
     }
 }
 
-@supports not (max-width: clamp( 8.3125rem , 5.6928827751rem  +  8.7320574163vw , 12.875rem )) {
+@supports not (max-width: clamp( 7.6875rem , 4.7090311005rem  +  9.9282296651vw , 12.875rem )) {
     .item-main-client_altcraft img {
-      max-width: calc(8.3125rem + 4.5625 * (100vw - 30rem) / 52.25);
+      max-width: calc(7.6875rem + 5.1875 * (100vw - 30rem) / 52.25);
     }
 }
 
-@supports (max-width: clamp( 10.625rem , 8.4718899522rem  +  7.1770334928vw , 14.375rem )) {
+@supports (max-width: clamp( 10rem , 7.4880382775rem  +  8.3732057416vw , 14.375rem )) {
     .item-main-client_1c img {
-      max-width: clamp( 10.625rem , 8.4718899522rem  +  7.1770334928vw , 14.375rem );
+      max-width: clamp( 10rem , 7.4880382775rem  +  8.3732057416vw , 14.375rem );
     }
 }
 
-@supports not (max-width: clamp( 10.625rem , 8.4718899522rem  +  7.1770334928vw , 14.375rem )) {
+@supports not (max-width: clamp( 10rem , 7.4880382775rem  +  8.3732057416vw , 14.375rem )) {
     .item-main-client_1c img {
-      max-width: calc(10.625rem + 3.75 * (100vw - 30rem) / 52.25);
+      max-width: calc(10rem + 4.375 * (100vw - 30rem) / 52.25);
     }
 }
 
-@supports (max-width: clamp( 9.375rem , 7.5807416268rem  +  5.980861244vw , 12.5rem )) {
+@supports (max-width: clamp( 8.125rem , 5.6130382775rem  +  8.3732057416vw , 12.5rem )) {
     .item-main-client_lennuf img {
-      max-width: clamp( 9.375rem , 7.5807416268rem  +  5.980861244vw , 12.5rem );
+      max-width: clamp( 8.125rem , 5.6130382775rem  +  8.3732057416vw , 12.5rem );
     }
 }
 
-@supports not (max-width: clamp( 9.375rem , 7.5807416268rem  +  5.980861244vw , 12.5rem )) {
+@supports not (max-width: clamp( 8.125rem , 5.6130382775rem  +  8.3732057416vw , 12.5rem )) {
     .item-main-client_lennuf img {
-      max-width: calc(9.375rem + 3.125 * (100vw - 30rem) / 52.25);
+      max-width: calc(8.125rem + 4.375 * (100vw - 30rem) / 52.25);
     }
 }
 
