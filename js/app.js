@@ -4772,11 +4772,11 @@
             tabIcon.style.top = tabActiveTitle.offsetTop + halfHeightBlock + "px";
         }
         document.addEventListener("mouseover", (function(e) {
-            if (e.target.closest("#circle")) e.target.closest("#circle").parentNode.setAttribute("class", "_hover-circle");
+            if (e.target.closest(".animation-item__circle")) e.target.closest(".animation-item__circle").parentNode.classList.add("_hover-circle");
             if (e.target.closest(".menu__item")) document.querySelector(".header").classList.add("_submenu-open");
         }));
         document.addEventListener("mouseout", (function(e) {
-            if (e.target.closest("#circle") && e.target.closest("#circle").parentNode.hasAttribute("class")) e.target.closest("#circle").parentNode.removeAttribute("class");
+            if (e.target.closest(".animation-item__circle") && e.target.closest(".animation-item__circle").parentNode.classList.contains("_hover-circle")) e.target.closest(".animation-item__circle").parentNode.classList.remove("_hover-circle");
             if (e.target.closest(".menu__item") && document.querySelector(".header").classList.contains("_submenu-open")) document.querySelector(".header").classList.remove("_submenu-open");
         }));
     }));
