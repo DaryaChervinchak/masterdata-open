@@ -310,10 +310,16 @@
                 }
                 e.preventDefault();
                 if (tabTitle.classList.contains("tabs-industry__title_background")) tabTitle.closest(".tabs-industries").classList.add("_violet-bg"); else tabTitle.closest(".tabs-industries").classList.remove("_violet-bg");
-                const halfHeightBlock = tabTitle.scrollHeight / 2;
-                const tabIcon = document.querySelector(".tabs-industry__icon");
-                tabIcon.style.top = tabTitle.offsetTop + halfHeightBlock + "px";
+                calcPositionTabicon(tabTitle);
+                window.addEventListener("resize", (function(e) {
+                    calcPositionTabicon(tabTitle);
+                }));
             }
+        }
+        function calcPositionTabicon(element) {
+            const halfHeightBlock = element.scrollHeight / 2;
+            const tabIcon = document.querySelector(".tabs-industry__icon");
+            tabIcon.style.top = element.offsetTop + halfHeightBlock + "px";
         }
     }
     function menuInit() {
